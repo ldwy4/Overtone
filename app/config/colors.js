@@ -1,5 +1,6 @@
 export default {
-    primary: "#002142",
+    primary: "#818181",
     secondary: '#ffc107',
     dark: '#1a1a20',
+    nav: '#2a2a30',
 }

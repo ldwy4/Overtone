@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Image, SafeAreaView, StyleSheet, Text, View, Platform, StatusBar } from 'react-native';
-import Track from './track';
+import DiaryEntry from './diaryEntry';
 
 import profileInfo from '../api/profileInfo';
 
-function tracklist({ tracks }) {
+function diaryEntries({ diaryEntries }) {
 
     return (
         <View style={styles.container}>
-            {tracks.map((track) => (
-                <Track track={track} key={track['id']}></Track>
+            {diaryEntries.map((entry) => (
+                <DiaryEntry entry={entry} key={entry['uid']}></DiaryEntry>
             ))}
         </View>
     );
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default tracklist;
+export default diaryEntries;
